@@ -5,7 +5,6 @@ delete_source_branch_on_merge: true
 projects:
 - name: my-dev-project
   dir: dev/
-  workflow: custom
   autoplan:
     enabled: true
     when_modified: ["*.tf", "*.tfvars"]
