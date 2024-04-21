@@ -1,0 +1,17 @@
+---
+projects:
+  - dir: dev
+    name: dev_core
+    workflow: dev_core
+
+version: 3
+workflows:
+  dev_core:
+    plan:
+      steps:
+        - init
+        - plan
+    apply:
+      steps:
+        - apply
+
